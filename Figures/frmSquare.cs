@@ -11,11 +11,11 @@ using Figures;
 
 namespace WinAppSquare
 {
-    public partial class frmSquare : Form
+    public partial class FrmSquare : Form
     {
         private CSquare ObjSquare = new CSquare();
 
-        public frmSquare()
+        public FrmSquare()
         {
             InitializeComponent();
         }

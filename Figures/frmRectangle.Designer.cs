@@ -1,6 +1,6 @@
 ﻿namespace WinAppRectangle
 {
-    partial class frmRectangle
+    partial class FrmRectangle
     {
         /// <summary>
         /// Required designer variable.

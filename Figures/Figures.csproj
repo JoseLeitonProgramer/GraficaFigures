@@ -47,26 +47,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CSquare.cs" />
-    <Compile Include="frmRectangle.cs">
+    <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRectangle.Designer.cs">
-      <DependentUpon>frmRectangle.cs</DependentUpon>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSquare.cs">
+    <Compile Include="FrmRectangle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSquare.Designer.cs">
-      <DependentUpon>frmSquare.cs</DependentUpon>
+    <Compile Include="FrmRectangle.Designer.cs">
+      <DependentUpon>FrmRectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSquare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSquare.Designer.cs">
+      <DependentUpon>FrmSquare.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CRectangle.cs" />
-    <EmbeddedResource Include="frmRectangle.resx">
-      <DependentUpon>frmRectangle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRectangle.resx">
+      <DependentUpon>FrmRectangle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSquare.resx">
-      <DependentUpon>frmSquare.cs</DependentUpon>
+    <EmbeddedResource Include="FrmSquare.resx">
+      <DependentUpon>FrmSquare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

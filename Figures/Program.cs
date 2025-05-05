@@ -22,11 +22,11 @@ namespace Figures
 
             if (selection == "rectangle")
             {
-                Application.Run(new WinAppRectangle.frmRectangle());
+                Application.Run(new WinAppRectangle.FrmRectangle());
             }
             else if (selection == "square")
             {
-                Application.Run(new WinAppSquare.frmSquare());
+                Application.Run(new WinAppSquare.FrmSquare());
             }
             else
             {
