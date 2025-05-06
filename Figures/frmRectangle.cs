@@ -12,10 +12,10 @@ using static System.Windows.Forms.MonthCalendar;
 
 namespace WinAppRectangle
 {
-    public partial class frmRectangle : Form
+    public partial class FrmRectangle : Form
     {
         private CRectangle ObjRectangle = new CRectangle();
-        public frmRectangle()
+        public FrmRectangle()
         {
             InitializeComponent();
         }
