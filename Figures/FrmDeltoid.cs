@@ -9,9 +9,20 @@ namespace WinAppDeltoid
     {
         private CDeltoid ObjDeltoid = new CDeltoid();
 
+        private static FrmDeltoid _instance;
+        public static FrmDeltoid GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmDeltoid();
+            }
+            return _instance;
+        }
+
         public FrmDeltoid()
         {
             InitializeComponent();
+            this.Load += FrmDeltoid_Load;
         }
 
         private void FrmDeltoid_Load(object sender, EventArgs e)

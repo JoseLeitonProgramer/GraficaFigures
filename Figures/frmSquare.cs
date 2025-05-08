@@ -15,9 +15,22 @@ namespace WinAppSquare
     {
         private CSquare ObjSquare = new CSquare();
 
-        public FrmSquare()
+        private static FrmSquare _instance;
+
+        public static FrmSquare GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmSquare();
+            }
+            return _instance;
+        }
+
+
+        private FrmSquare()
         {
             InitializeComponent();
+            this.Load += frmSquare_Load;
         }
 
         private void frmSquare_Load(object sender, EventArgs e)

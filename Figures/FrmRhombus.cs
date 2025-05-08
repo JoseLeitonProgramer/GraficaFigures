@@ -8,10 +8,20 @@ namespace WinAppRhombus
     public partial class FrmRhombus : Form
     {
         private CRhombus ObjRhombus = new CRhombus();
+        private static FrmRhombus _instance;
+        public static FrmRhombus GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmRhombus();
+            }
+            return _instance;
+        }
 
         public FrmRhombus()
         {
             InitializeComponent();
+            this.Load += FrmRhombus_Load;
         }
 
         private void FrmRhombus_Load(object sender, EventArgs e)

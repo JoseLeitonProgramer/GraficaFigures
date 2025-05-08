@@ -9,9 +9,19 @@ namespace WinAppEllipse
     {
         private CEllipse ObjEllipse = new CEllipse();
 
+        private static FrmEllipse _instance;
+        public static FrmEllipse GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmEllipse();
+            }
+            return _instance;
+        }
         public FrmEllipse()
         {
             InitializeComponent();
+            this.Load += FrmEllipse_Load;
         }
 
         private void FrmEllipse_Load(object sender, EventArgs e)

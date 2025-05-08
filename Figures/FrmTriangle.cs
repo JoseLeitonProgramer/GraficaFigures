@@ -9,9 +9,19 @@ namespace WinAppTriangle
     {
         private CTriangle ObjTriangle = new CTriangle();
 
+        private static FrmTriangle _instance;
+        public static FrmTriangle GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmTriangle();
+            }
+            return _instance;
+        }
         public FrmTriangle()
         {
             InitializeComponent();
+            this.Load += FrmTriangle_Load;
         }
 
         private void FrmTriangle_Load(object sender, EventArgs e)
@@ -22,7 +32,7 @@ namespace WinAppTriangle
 
         private void picCanvas_Click(object sender, EventArgs e)
         {
-            // Por si deseas dibujar interactivo más adelante
+           
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

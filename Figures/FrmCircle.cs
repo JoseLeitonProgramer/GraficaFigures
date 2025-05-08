@@ -9,9 +9,19 @@ namespace WinAppCircle
     {
         private CCircle ObjCircle = new CCircle();
 
+        private static FrmCircle _instance;
+        public static FrmCircle GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmCircle();
+            }
+            return _instance;
+        }
         public FrmCircle()
         {
             InitializeComponent();
+            this.Load += FrmCircle_Load;
         }
 
         private void FrmCircle_Load(object sender, EventArgs e)

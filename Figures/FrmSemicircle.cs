@@ -9,9 +9,19 @@ namespace WinAppSemicircle
     {
         private CSemicircle ObjSemicircle = new CSemicircle();
 
+        private static FrmSemicircle _instance;
+        public static FrmSemicircle GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmSemicircle();
+            }
+            return _instance;
+        }
         public FrmSemicircle()
         {
             InitializeComponent();
+            this.Load += FrmSemicircle_Load;
         }
 
         private void FrmSemicircle_Load(object sender, EventArgs e)

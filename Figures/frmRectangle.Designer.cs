@@ -64,14 +64,14 @@
             // 
             // txtPerimeter
             // 
-            this.txtPerimeter.Location = new System.Drawing.Point(107, 339);
+            this.txtPerimeter.Location = new System.Drawing.Point(106, 281);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.Size = new System.Drawing.Size(100, 20);
             this.txtPerimeter.TabIndex = 2;
             // 
             // txtArea
             // 
-            this.txtArea.Location = new System.Drawing.Point(107, 365);
+            this.txtArea.Location = new System.Drawing.Point(106, 307);
             this.txtArea.Name = "txtArea";
             this.txtArea.Size = new System.Drawing.Size(100, 20);
             this.txtArea.TabIndex = 3;
@@ -165,7 +165,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 272);
+            this.label5.Location = new System.Drawing.Point(10, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 24);
             this.label5.TabIndex = 12;
@@ -175,7 +175,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 339);
+            this.label6.Location = new System.Drawing.Point(3, 281);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 18);
             this.label6.TabIndex = 13;
@@ -185,7 +185,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(4, 365);
+            this.label7.Location = new System.Drawing.Point(3, 307);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 18);
             this.label7.TabIndex = 14;
@@ -213,7 +213,7 @@
             this.Rectangle.Text = "Rectangle";
             this.Rectangle.UseVisualStyleBackColor = false;
             // 
-            // frmRectangle
+            // FrmRectangle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -236,7 +236,7 @@
             this.Controls.Add(this.txtPerimeter);
             this.Controls.Add(this.txtHeight);
             this.Controls.Add(this.txtWidth);
-            this.Name = "frmRectangle";
+            this.Name = "FrmRectangle";
             this.Text = "FrmRectangle";
             this.Load += new System.EventHandler(this.frmRectangle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();

@@ -9,9 +9,19 @@ namespace WinAppRhomboid
     {
         private CRhomboid ObjRhomboid = new CRhomboid();
 
+        private static FrmRhomboid _instance;
+        public static FrmRhomboid GetInstance()
+        {
+            if (_instance == null || _instance.IsDisposed)
+            {
+                _instance = new FrmRhomboid();
+            }
+            return _instance;
+        }
         public FrmRhomboid()
         {
             InitializeComponent();
+            this.Load += FrmRhomboid_Load;
         }
 
         private void FrmRhomboid_Load(object sender, EventArgs e)
