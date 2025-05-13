@@ -33,7 +33,7 @@ namespace WinAppCircle
 
         private void picCanvas_Click(object sender, EventArgs e)
         {
-            // Para interacción futura si lo deseas
+
         }
 
        

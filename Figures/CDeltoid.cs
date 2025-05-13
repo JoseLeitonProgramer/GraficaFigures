@@ -8,12 +8,12 @@ namespace Figures
     {
         private float mDiagonalMajor;
         private float mDiagonalMinor;
-        private float mSideA; // Un par de lados iguales
-        private float mSideB; // Otro par de lados iguales
+        private float mSideA; 
+        private float mSideB; 
         private float mPerimeter;
         private float mArea;
         private Graphics mGraph;
-        private const float SF = 10; // Scale factor
+        private const float SF = 10; 
         private Pen mPen;
 
         public CDeltoid()
@@ -83,7 +83,7 @@ namespace Figures
             mGraph = picCanvas.CreateGraphics();
             mPen = new Pen(Color.DarkGreen, 3);
 
-            // Coordenadas aproximadas para representar un deltoide
+           
             float xCenter = picCanvas.Width / 2;
             float yCenter = picCanvas.Height / 2;
 

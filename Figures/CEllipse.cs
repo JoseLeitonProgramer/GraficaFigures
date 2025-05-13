@@ -11,7 +11,7 @@ namespace Figures
         private float mPerimeter;
         private float mArea;
         private Graphics mGraph;
-        private const float SF = 20; // Scale factor
+        private const float SF = 20;
         private Pen mPen;
 
         public CEllipse()
@@ -38,7 +38,7 @@ namespace Figures
 
         public void PerimeterEllipse()
         {
-            // Fórmula de Ramanujan para el perímetro aproximado de una elipse:
+            
             float a = mMajorRadius;
             float b = mMinorRadius;
             mPerimeter = (float)(Math.PI * (3 * (a + b) - Math.Sqrt((3 * a + b) * (a + 3 * b))));

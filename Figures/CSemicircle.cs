@@ -10,7 +10,7 @@ namespace Figures
         private float mPerimeter;
         private float mArea;
         private Graphics mGraph;
-        private const float SF = 10; // Scale factor
+        private const float SF = 10; 
         private Pen mPen;
 
         public CSemicircle()
@@ -70,9 +70,8 @@ namespace Figures
             float cx = 100;
             float cy = 100;
 
-            // Dibuja semicírculo con línea base horizontal
-            mGraph.DrawArc(mPen, cx, cy, 2 * r, 2 * r, 180, 180); // arco superior
-            mGraph.DrawLine(mPen, cx, cy + r, cx + 2 * r, cy + r); // línea recta inferior
+            mGraph.DrawArc(mPen, cx, cy, 2 * r, 2 * r, 180, 180); 
+            mGraph.DrawLine(mPen, cx, cy + r, cx + 2 * r, cy + r); 
         }
 
         public void CloseForm(Form ObjForm)

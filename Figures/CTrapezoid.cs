@@ -87,12 +87,11 @@ namespace Figures
             float topOffset = (mBaseMajor - mBaseMinor) * SF / 2;
 
             PointF[] points = new PointF[4];
-            points[0] = new PointF(x, y); // esquina superior izquierda
-            points[1] = new PointF(x + mBaseMinor * SF, y); // esquina superior derecha
-            points[2] = new PointF(x + mBaseMajor * SF, y + mHeight * SF); // inferior derecha
-            points[3] = new PointF(x, y + mHeight * SF); // inferior izquierda
+            points[0] = new PointF(x, y);
+            points[1] = new PointF(x + mBaseMinor * SF, y);
+            points[2] = new PointF(x + mBaseMajor * SF, y + mHeight * SF);
+            points[3] = new PointF(x, y + mHeight * SF); 
 
-            // Ajustar posición superior para centrar el trapecio
             points[0].X += topOffset;
             points[1].X += topOffset;
 

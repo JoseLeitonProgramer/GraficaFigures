@@ -12,7 +12,7 @@ namespace Figures
         private float mPerimeter;
         private float mArea;
         private Graphics mGraph;
-        private const float SF = 20; // Scale factor
+        private const float SF = 20;
         private Pen mPen;
 
         public CRhomboid()
@@ -72,7 +72,6 @@ namespace Figures
             mGraph = picCanvas.CreateGraphics();
             mPen = new Pen(Color.DarkGreen, 3);
 
-            // Dibujo aproximado de un romboide
             PointF[] points = new PointF[4];
             float offset = 40;
 

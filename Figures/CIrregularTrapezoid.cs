@@ -14,7 +14,7 @@ namespace Figures
         private float mPerimeter;
         private float mArea;
         private Graphics mGraph;
-        private const float SF = 20; // Scale factor
+        private const float SF = 20;
         private Pen mPen;
 
         public CIrregularTrapezoid()
@@ -78,7 +78,6 @@ namespace Figures
             mGraph = picCanvas.CreateGraphics();
             mPen = new Pen(Color.SaddleBrown, 3);
 
-            // Coordenadas escaladas para dibujo visual (aproximado)
             PointF[] points = new PointF[4];
             float topOffset = (picCanvas.Width - mBase2 * SF) / 2;
             float bottomOffset = (picCanvas.Width - mBase1 * SF) / 2;

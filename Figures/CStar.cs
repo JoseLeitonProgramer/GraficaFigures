@@ -37,16 +37,15 @@ namespace Figures
             }
         }
 
-        // Estimaciones simples para estrella de 5 puntas
         public void PerimeterStar()
         {
-            float side = 2 * mRadius * (float)Math.Sin(Math.PI / 5); // Aproximación
-            mPerimeter = 10 * side; // 10 lados exteriores
+            float side = 2 * mRadius * (float)Math.Sin(Math.PI / 5); 
+            mPerimeter = 10 * side;
         }
 
         public void AreaStar()
         {
-            // Aproximación: área de un pentágono regular + área de 5 triángulos isósceles
+            
             float angle = (float)(Math.PI / 5);
             float apothem = mRadius * (float)Math.Cos(angle);
             float basePentagon = 2 * mRadius * (float)Math.Sin(angle);
@@ -85,7 +84,7 @@ namespace Figures
             float cx = picCanvas.Width / 2;
             float cy = picCanvas.Height / 2;
             float R = mRadius * SF;
-            float r = R * 0.38f; // radio interior (aproximado)
+            float r = R * 0.38f;
 
             PointF[] points = new PointF[10];
             for (int i = 0; i < 10; i++)

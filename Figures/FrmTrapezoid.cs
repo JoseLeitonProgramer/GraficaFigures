@@ -40,7 +40,7 @@ namespace WinAppTrapezoid
 
         private void picCanvas_Click(object sender, EventArgs e)
         {
-            // No se requiere lógica aquí
+           
         }
 
         private void btnCalculate_Click_1(object sender, EventArgs e)

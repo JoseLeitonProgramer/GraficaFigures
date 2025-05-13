@@ -69,7 +69,6 @@ namespace Figures
             mPen = new Pen(Color.Red, 3);
             float diameter = 2 * mRadius * SF;
 
-            // Dibujar el círculo centrado en la esquina superior izquierda
             mGraph.DrawEllipse(mPen, 0, 0, diameter, diameter);
         }
 

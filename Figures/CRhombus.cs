@@ -12,7 +12,7 @@ namespace Figures
         private float mPerimeter;
         private float mArea;
         private Graphics mGraph;
-        private const float SF = 10; // Scale Factor
+        private const float SF = 10;
         private Pen mPen;
 
         public CRhombus()
@@ -80,10 +80,10 @@ namespace Figures
             float d1 = mDiagonal1 * SF;
             float d2 = mDiagonal2 * SF;
 
-            points[0] = new PointF(cx, cy - d2 / 2); // Top
-            points[1] = new PointF(cx + d1 / 2, cy); // Right
-            points[2] = new PointF(cx, cy + d2 / 2); // Bottom
-            points[3] = new PointF(cx - d1 / 2, cy); // Left
+            points[0] = new PointF(cx, cy - d2 / 2); 
+            points[1] = new PointF(cx + d1 / 2, cy); 
+            points[2] = new PointF(cx, cy + d2 / 2); 
+            points[3] = new PointF(cx - d1 / 2, cy); 
 
             mGraph.DrawPolygon(mPen, points);
         }
